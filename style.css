@@ -31,7 +31,7 @@ body {
 
 
 .hero {
-  background-image: url('images/hero.jpg'); /* or just 'hero.jpg' if it's in the same folder */
+  background-image: url('./images/hero.jpg'); /* or just 'hero.jpg' if it's in the same folder */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
