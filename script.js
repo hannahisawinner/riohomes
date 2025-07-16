@@ -1,20 +1,32 @@
 document.getElementById('contact-form').addEventListener('submit', async function (e) {
   e.preventDefault();
 
-  const form = e.target;
-  const formData = new FormData(form);
+  const data = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value
+  };
+
+  const responseEl = document.getElementById("form-response");
 
   try {
-    // Placeholder — Replace with working endpoint if needed
-    await fetch('https://example.com/submit', {
-      method: 'POST',
-      body: formData,
+    const res = await fetch("YOUR_SCRIPT_URL_HERE", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
     });
 
-    document.getElementById('form-response').textContent = '✅ Message sent successfully!';
-    form.reset();
+    const result = await res.json();
+    if (result.result === "success") {
+      responseEl.textContent = "✅ Message sent!";
+      e.target.reset();
+    } else {
+      responseEl.textContent = "❌ Something went wrong.";
+    }
   } catch (error) {
     console.error(error);
-    document.getElementById('form-response').textContent = '⚠️ Error submitting the form.';
+    responseEl.textContent = "⚠️ Error submitting the form.";
   }
 });
