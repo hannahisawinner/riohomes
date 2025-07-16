@@ -10,7 +10,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
   const responseEl = document.getElementById("form-response");
 
   try {
-    const res = await fetch("YOUR_SCRIPT_URL_HERE", {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbyuATD6ZuwyKYMXO0yZpsJfBxeqdd2KwEEM11WgwxJKJ7-4NLlXLTwElkPFgMpzRj4J/exec", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
