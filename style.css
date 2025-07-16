@@ -52,7 +52,14 @@ body {
   z-index: 1;
 }
 
-.hero h1, .hero p {
+.hero h1 {
+  font-size: 3rem; /* approx. 48px */
+  position: relative;
+  z-index: 2;
+}
+
+.hero p {
+  font-size: 1.5rem; /* approx. 24px */
   position: relative;
   z-index: 2;
 }
