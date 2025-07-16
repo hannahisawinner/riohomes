@@ -143,3 +143,24 @@ button {
 button:hover {
   background: #005fa3;
 }
+
+
+
+
+
+
+
+
+.site-footer {
+  margin-top: auto;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+
+
+
