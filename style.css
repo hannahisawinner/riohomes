@@ -31,10 +31,19 @@ body {
 
 
 .hero {
+  background-image: url('images/hero.jpg'); /* or just 'hero.jpg' if it's in the same folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Ensure text is readable */
+  padding: 100px 20px;
   text-align: center;
-  padding: 4em 1em;
-  background: #f5f5f5;
+  min-height: 60vh; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 
 
