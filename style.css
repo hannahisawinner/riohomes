@@ -26,6 +26,10 @@ body {
 }
 
 
+
+
+
+
 .hero {
   text-align: center;
   padding: 4em 1em;
@@ -33,17 +37,65 @@ body {
 }
 
 
-.faq-section, .contact-section {
+
+
+
+
+.faq-section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq h2 {
+  margin-bottom: 0.3rem;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 1rem;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px; /* Adjust as needed or use auto with JS */
+  padding-bottom: 1rem;
+}
+
+.faq-item.open .caret {
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+.contact-section {
   padding: 2em;
   max-width: 800px;
   margin: 0 auto;
 }
-.faq h3 {
-  margin-bottom: 0.3em;
-}
-
-
-
 
 .contact-section form {
   display: flex;
@@ -67,7 +119,6 @@ body {
   font-size: 1em;
   color: #999;
 }
-
 
 button {
   background: #0077cc;
