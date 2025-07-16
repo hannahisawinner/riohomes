@@ -28,7 +28,13 @@ body {
 
 
 
-
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* 50% black overlay */
+  z-index: 0;
+}
 
 .hero {
   background-image: url('./images/hero.jpg'); /* or just 'hero.jpg' if it's in the same folder */
@@ -42,9 +48,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
-
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+}
 
 
 
