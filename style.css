@@ -272,7 +272,7 @@ body.menu-open .hamburger {
   color: #333;
   background-color: #fff;
 }
-.contact-section select option[disabled] {
+.contact-section select:invalid {
   color: #999;
 }
 
