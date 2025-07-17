@@ -127,6 +127,15 @@ body {
   transition: max-height 0.3s ease;
   padding: 0 1rem;
 }
+.faq-answer ul {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+  list-style-type: disc;
+}
+.faq-answer li {
+  margin-bottom: 0.5rem;
+}
+
 
 .faq-item.open .faq-answer {
   max-height: 200px; /* Adjust as needed or use auto with JS */
