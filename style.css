@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1em 1em;
 }
 
 .logo {
@@ -154,7 +155,7 @@ body {
 .close-btn {
   position: absolute;
   top: 20px;
-  right: 30px;
+  right: 16px;
   font-size: 2rem;
   cursor: pointer;
   color: #333;
