@@ -324,11 +324,9 @@ body.menu-open .hamburger {
 }
 
 .page-title h1 {
-  font-weight: 700;
-  border-bottom: 3px solid #0077cc;
-  display: inline-block;
-  padding-bottom: 0.3rem;
-  margin-bottom: 2rem;
+  margin: 0;
+  font-size: 2.5rem;
+  color: #1a1a1a; /* Dark gray/black text */
 }
 
 .faq-section {
@@ -338,55 +336,43 @@ body.menu-open .hamburger {
   max-width: 800px;
   margin: 0 auto;
 }
-.faq-section h2 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #0077cc;
-  margin-bottom: 1.25rem;
-  border-left: 4px solid #0077cc;
-  padding-left: 0.5rem;
+.faq h2 {
+  margin-bottom: 0.3rem;
 }
 
 .faq-item {
-  border-bottom: none; /* Remove plain border */
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-  border-radius: 6px;
-  margin-bottom: 1.5rem;
-  background: #fafafa;
-  transition: box-shadow 0.3s ease;
-}
-.faq-item:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  border-bottom: 1px solid #ccc;
 }
 
 .faq-question {
-  padding: 1.25rem 1.5rem;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #222;
-  background-color: #fff;
-  border-radius: 6px;
-  box-shadow: inset 0 -1px 0 #ddd;
-}
-.faq-question:hover {
-  background-color: #f0f4f8;
+  color: #333; /* Set visible text color */
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
 }
 
 .faq-question .caret {
-  font-size: 1.3rem;
-  color: #0077cc;
-  transition: transform 0.35s ease;
+  color: #333; /* Make the caret visible */
+  transition: transform 0.3s ease;
 }
-.faq-item.open .caret {
-  transform: rotate(180deg);
+
+.faq-question:hover {
+  background-color: #f9f9f9; /* Optional hover background */
 }
 
 .faq-answer {
-  padding: 0 1.5rem 1.25rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #444;
-  transition: max-height 0.4s ease, padding 0.4s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 1rem;
 }
 .faq-answer ul {
   padding-left: 1.5rem;
@@ -401,6 +387,10 @@ body.menu-open .hamburger {
 .faq-item.open .faq-answer {
   max-height: 200px; /* Adjust as needed or use auto with JS */
   padding-bottom: 1rem;
+}
+
+.faq-item.open .caret {
+  transform: rotate(180deg);
 }
 
 
