@@ -5,6 +5,12 @@ body {
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
   width: 100%;
   max-width: 1200px; /* or whatever you like */
