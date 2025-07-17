@@ -257,17 +257,24 @@ body.menu-open .hamburger {
   color: #999;
 }
 
-button {
-  background: #0077cc;
+.contact-section button {
+  width: fit-content;       /* Makes the button as wide as its content */
+  align-self: center;       /* Centers it in the flex column */
+  padding: 0.7em 1.5em;      /* Adds horizontal padding */
+  background-color: navy; /* Navy Blue */
   color: white;
-  padding: 0.7em;
   border: none;
   cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-  background: #005fa3;
+.contact-section button:hover {
+  background-color: #003366; /* Slightly lighter navy */
+  transform: scale(1.05);
 }
+
 
 .contact-section h2 {
   text-align: center;
