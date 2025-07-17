@@ -227,6 +227,8 @@ body.menu-open .hamburger {
 
 
 
+
+
 /* -------------------------- Contact section -------------------------- */
 .contact-section {
   padding: 2em;
@@ -270,6 +272,10 @@ body.menu-open .hamburger {
   color: #333;
   background-color: #fff;
 }
+.contact-section select option[disabled] {
+  color: #999;
+}
+
 
 .contact-section button {
   width: fit-content;       /* Makes the button as wide as its content */
