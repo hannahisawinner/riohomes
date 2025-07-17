@@ -9,7 +9,7 @@ const formData = new FormData();
     formData.append('name', contactForm.name.value);
     formData.append('email', contactForm.email.value);
     formData.append('phone', contactForm.phone.value);
-    formData.append('focus', contactForm.focus.value);
+    formData.append('interest', contactForm.interest.value);
     formData.append('message', contactForm.message.value);
     
     try {
