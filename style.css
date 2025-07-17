@@ -251,6 +251,18 @@ button:hover {
   color: #555;
 }
 
+/* For the button on the FAQs footer */
+.site-footer a {
+  color: #555;            /* to match your footer */
+  text-decoration: none;   /* removes underline */
+  font-weight: bold;       /* already handled by <strong>, but redundant is fine */
+}
+
+.site-footer a:hover {
+  text-decoration: underline; /* adds underline on hover if you want */
+}
+
+
 
 
 
