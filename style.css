@@ -42,8 +42,8 @@ body {
 }
 
 /* White underline on hover */
-.navbar a:hover::after,
-.navbar a.active::after {
+.navbar a:not(.logo):hover::after,
+.navbar a:not(.logo).active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -54,7 +54,7 @@ body {
 }
 
 /* Make sure there's no underline unless hovered or active */
-.navbar a::after {
+.navbar a:not(.logo)::after {
   content: "";
   position: absolute;
   left: 0;
@@ -65,7 +65,7 @@ body {
   transition: width 0.3s ease;
 }
 
-.navbar a:hover::after {
+.navbar a:not(.logo):hover::after {
   width: 100%;
 }
 
