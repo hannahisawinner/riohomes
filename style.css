@@ -5,6 +5,14 @@ body {
   scroll-behavior: smooth;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px; /* or whatever you like */
+  margin: 0 auto;
+  padding: 0 20px; /* same horizontal padding across sections */
+}
+
+
 /* -------------------------- Navbar section -------------------------- */
 .navbar {
   position: sticky; /* or fixed*/
