@@ -17,16 +17,18 @@ body {
 .navbar {
   position: sticky; /* or fixed*/
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 1000; /* Keep it above all other content */
   background-color: #1a1a1a;
-  padding: 1em 2em; /* or 20px 40px;*/
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* subtle shadow for separation */
+  color: white; /* can delete */
+}
+
+.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* subtle shadow for separation */
-  color: white; /* can delete */
+  padding: 1em 0;
 }
 
 .logo {
