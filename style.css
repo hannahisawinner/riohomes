@@ -224,6 +224,90 @@ body.menu-open .hamburger {
 
 
 
+
+
+
+/* -------------------------- Contact section -------------------------- */
+.contact-section {
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.5em;
+  font-size: 1em;
+  font-family: inherit; /* Ensures both use the body font */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Optional: allows resizing only vertically */
+}
+
+.contact-section textarea::placeholder,
+.contact-section input::placeholder {
+  font-family: inherit;
+  font-size: 1em;
+  color: #999;
+}
+
+button {
+  background: #0077cc;
+  color: white;
+  padding: 0.7em;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2rem;       /* Optional: adjust as needed */
+  font-weight: bold;     /* Optional: make it bold */
+  margin-bottom: 1em;    /* Optional: spacing below */
+}
+
+
+
+
+
+
+/* -------------------------- Footer section -------------------------- */
+.site-footer {
+  margin-top: auto;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* For the button on the FAQs footer */
+.site-footer a {
+  color: #555;            /* to match your footer */
+  text-decoration: none;   /* removes underline */
+  font-weight: bold;       /* already handled by <strong>, but redundant is fine */
+}
+
+.site-footer a:hover {
+  text-decoration: underline; /* adds underline on hover if you want */
+}
+
+
+
+
+
+
+
 /* -------------------------- FAQs section -------------------------- */
 .page-title {
   background-color: #f7f7f7; /* Light gray background (optional) */
@@ -308,74 +392,7 @@ body.menu-open .hamburger {
 
 
 
-/* -------------------------- Contact section -------------------------- */
-.contact-section {
-  padding: 2em;
-  max-width: 800px;
-  margin: 0 auto;
-}
 
-.contact-section form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.contact-section input,
-.contact-section textarea {
-  padding: 0.5em;
-  font-size: 1em;
-  font-family: inherit; /* Ensures both use the body font */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical; /* Optional: allows resizing only vertically */
-}
-
-.contact-section textarea::placeholder,
-.contact-section input::placeholder {
-  font-family: inherit;
-  font-size: 1em;
-  color: #999;
-}
-
-button {
-  background: #0077cc;
-  color: white;
-  padding: 0.7em;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #005fa3;
-}
-
-
-
-
-
-
-
-/* -------------------------- Footer section -------------------------- */
-.site-footer {
-  margin-top: auto;
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* For the button on the FAQs footer */
-.site-footer a {
-  color: #555;            /* to match your footer */
-  text-decoration: none;   /* removes underline */
-  font-weight: bold;       /* already handled by <strong>, but redundant is fine */
-}
-
-.site-footer a:hover {
-  text-decoration: underline; /* adds underline on hover if you want */
-}
 
 
 
