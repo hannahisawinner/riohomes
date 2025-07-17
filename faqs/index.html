@@ -10,17 +10,30 @@
 
 <body>
 
-  <!------ Navbar ------>
+  <!------ Large Screen Navbar ------>
   <nav class="navbar">
-    <div class="navbar-content">
       <a href="/" class="logo">Rio Homes TX</a>
+      <ul class="nav-links desktop-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/faqs/" class="active">FAQs</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="hamburger" onclick="openMenu()">☰</div>
+  </nav>
+
+  <!-- Overlay Menu -->
+  <div id="overlayMenu" class="overlay">
+    <div class="overlay-content">
+      <span class="close-btn" onclick="closeMenu()">✕</span>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/faqs/" class="active">FAQs</a></li>
-        <li><a href="/#contact">Contact Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
-  </nav>
+  </div>
+
+  
 
   <!------ Title Section ------>
   <section class="page-title">
