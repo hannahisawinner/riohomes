@@ -13,7 +13,7 @@ const formData = new FormData();
     formData.append('message', contactForm.message.value);
     
     try {
-        const res = await fetch('https://script.google.com/macros/s/AKfycbyuATD6ZuwyKYMXO0yZpsJfBxeqdd2KwEEM11WgwxJKJ7-4NLlXLTwElkPFgMpzRj4J/exec', {
+        const res = await fetch('https://script.google.com/macros/s/AKfycbwtnQr1-U1lbLIQ2_93lQRtDENZjsYpzV52YpEDwEe-9b4B8zt9t9KjuDnu6ONmv29b/exec', {
           method: 'POST',
           body: formData
         });
