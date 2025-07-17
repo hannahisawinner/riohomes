@@ -30,7 +30,7 @@ contactForm.addEventListener('submit', async function(e) {
   data.append('message', contactForm.message.value);
 
   try {
-    const res = await fetch('https://script.google.com/macros/s/AKfycbwtnQr1-U1lbLIQ2_93lQRtDENZjsYpzV52YpEDwEe-9b4B8zt9t9KjuDnu6ONmv29b/exec', {
+    const res = await fetch('https://script.google.com/macros/s/AKfycbyHRrDVt2dXcvzWEqVJM0uhwXuLNkKYmY7cZF_Tk7rM0HRI_7Brw_ASPIM_UES6c4Hg/exec', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
