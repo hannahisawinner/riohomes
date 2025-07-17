@@ -26,8 +26,8 @@ const formData = new FormData();
           responseEl.textContent = "❌ Something went wrong. Please try again.";
         }
     } catch (error) {
-        console.error(error);
-        responseEl.textContent = "⚠️ Error submitting the form.";
+      console.error('Form submission failed:', error);
+      responseEl.textContent = "⚠️ Error submitting the form: " + error.message;
     }
 });
 
