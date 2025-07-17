@@ -233,6 +233,12 @@ body.menu-open .hamburger {
   max-width: 600px;
   margin: 0 auto;
 }
+.contact-section h2 {
+  text-align: center;
+  font-size: 2rem;       /* Optional: adjust as needed */
+  font-weight: bold;     /* Optional: make it bold */
+  margin-bottom: 1em;    /* Optional: spacing below */
+}
 
 .contact-section form {
   display: flex;
@@ -249,12 +255,20 @@ body.menu-open .hamburger {
   border-radius: 4px;
   resize: vertical; /* Optional: allows resizing only vertically */
 }
-
 .contact-section textarea::placeholder,
 .contact-section input::placeholder {
   font-family: inherit;
   font-size: 1em;
   color: #999;
+}
+.contact-section select {
+  padding: 0.5em;
+  font-size: 1em;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
 }
 
 .contact-section button {
@@ -277,12 +291,7 @@ body.menu-open .hamburger {
 }
 
 
-.contact-section h2 {
-  text-align: center;
-  font-size: 2rem;       /* Optional: adjust as needed */
-  font-weight: bold;     /* Optional: make it bold */
-  margin-bottom: 1em;    /* Optional: spacing below */
-}
+
 
 
 
