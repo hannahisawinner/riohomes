@@ -40,7 +40,7 @@ body {
 }
 
 /* Hover underline */
-.nav-links a::after {
+.navbar a::after {
   content: '';
   position: absolute;
   width: 0%;
@@ -51,16 +51,16 @@ body {
   transition: width 0.3s ease;
 }
 
-.nav-links a:hover::after {
+.navbar a:hover::after {
   width: 100%;
 }
 
-.nav-links a:hover {
+.navbar a:hover {
   color: #ffffff; /* white */
 }
 
 /* to keep the underline when tab is active */
-.nav-links a.active::after {
+.navbar a.active::after {
   width: 100%;
 }
 
