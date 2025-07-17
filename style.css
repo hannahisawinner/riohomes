@@ -318,7 +318,7 @@ body.menu-open .hamburger {
 
 /* -------------------------- FAQs section -------------------------- */
 .page-title {
-  background-color: #f7f7f7; /* Light gray background (optional) */
+  background-color: #ffffff; /* or #f7f7f7 Light gray background (optional) */
   padding: 3rem 1rem 2rem;   /* Spacing around the title */
   text-align: center;
 }
