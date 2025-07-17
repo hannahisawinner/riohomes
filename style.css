@@ -341,38 +341,51 @@ body.menu-open .hamburger {
 }
 
 .faq-item {
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .faq-question {
-  color: #333; /* Set visible text color */
-  width: 100%;
-  background: none;
+  background-color: #fafafa;
+  padding: 1rem 1.25rem;
+  font-size: 1.05rem;
   border: none;
-  padding: 1rem;
-  text-align: left;
   display: flex;
   justify-content: space-between;
-  font-size: 1.1rem;
-  font-weight: bold;
+  align-items: center;
+  font-weight: 600;
   cursor: pointer;
-  outline: none;
-}
-
-.faq-question .caret {
-  color: #333; /* Make the caret visible */
-  transition: transform 0.3s ease;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.2s;
 }
 
 .faq-question:hover {
-  background-color: #f9f9f9; /* Optional hover background */
+  background-color: #f0f0f0;
 }
 
+.faq-question .caret {
+  font-size: 1.2rem;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+
 .faq-answer {
+  padding: 0 1.25rem;
+  font-size: 0.95rem;
+  color: #444;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding: 0 1rem;
+  transition: max-height 0.4s ease;
 }
 .faq-answer ul {
   padding-left: 1.5rem;
@@ -385,8 +398,8 @@ body.menu-open .hamburger {
 
 
 .faq-item.open .faq-answer {
-  max-height: 200px; /* Adjust as needed or use auto with JS */
   padding-bottom: 1rem;
+  max-height: 400px; /* Safe value for long answers */
 }
 
 .faq-item.open .caret {
