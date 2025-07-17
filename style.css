@@ -190,7 +190,7 @@ body.menu-open .hamburger {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* 50% black overlay */
+  background: rgba(0, 0, 0, 0.75); /* 75% black overlay */
   z-index: 0;
 }
 
