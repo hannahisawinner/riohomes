@@ -7,67 +7,166 @@ body {
 
 /* -------------------------- Navbar section -------------------------- */
 .navbar {
-  background: #1a1a1a;
-  color: white;
-  padding: 1em 2em;
-  position: sticky;
+  position: sticky; /* or fixed*/
   top: 0;
-  z-index: 1000;
-}
-.navbar-content {
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Keep it above all other content */
+  background-color: #1a1a1a;
+  padding: 1em 2em; /* or 20px 40px;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* subtle shadow for separation */
+  color: white; /* can delete */
 }
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
-}
-.navbar ul {
-  list-style: none;
-  display: flex;
-/*   justify-content: center; */
-  gap: 2em;
-  margin: 0;
-  padding: 0;
-}
-.navbar a {
-  color: white;
   text-decoration: none;
-  position: relative; /* Needed for the underline effect */
-  padding-bottom: 4px; /* Optional spacing */
 }
 
-/* White underline on hover */
-.navbar a:not(.logo):hover::after,
-.navbar a:not(.logo).active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: white;
+/* Desktop Nav Links */
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
 }
 
-/* Make sure there's no underline unless hovered or active */
-.navbar a:not(.logo)::after {
-  content: "";
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff; /* white */
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+/* Hover underline */
+.nav-links a::after {
+  content: '';
   position: absolute;
-  left: 0;
-  bottom: 0;
   width: 0%;
   height: 2px;
-  background-color: white;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff; /* white underline */
   transition: width 0.3s ease;
 }
 
-.navbar a:not(.logo):hover::after {
+.nav-links a:hover::after {
   width: 100%;
 }
+
+.nav-links a:hover {
+  color: #ffffff; /* white */
+}
+
+/* to keep the underline when tab is active */
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff; /* white */
+  position: static;
+  align-self: center;
+  margin-left: auto;
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+/* Overlay Menu */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(2px);
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.overlay.active {
+  left: 0;
+}
+
+.overlay-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.overlay-content ul li {
+  margin: 20px 0;
+}
+
+.overlay-content ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+  z-index: 1101;
+}
+
+/* Hide hamburger when menu is open */
+body.menu-open .hamburger {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* -------------------------- Home Hero section -------------------------- */
