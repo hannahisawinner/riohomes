@@ -319,7 +319,7 @@ body.menu-open .hamburger {
 /* -------------------------- FAQs section -------------------------- */
 .page-title {
   background-color: #ffffff; /* or #f7f7f7 Light gray background (optional) */
-  padding: 3rem 1rem 2rem;   /* Spacing around the title */
+  padding: 3rem 1rem 1rem;   /* Spacing around the title */
   text-align: center;
 }
 
@@ -332,7 +332,7 @@ body.menu-open .hamburger {
 .faq-section {
   background-color: #ffffff; /* White background */
   color: #333; /* Default dark text */
-  padding: 2rem;
+  padding: 1rem 2rem;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -383,6 +383,7 @@ body.menu-open .hamburger {
   padding: 0 1.25rem;
   font-size: 0.95rem;
   color: #444;
+  line-height: 1.6;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
