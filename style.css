@@ -39,6 +39,30 @@ body {
   text-decoration: none;
 }
 
+/* Hover underline */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff; /* white underline */
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #ffffff; /* white */
+}
+
+/* to keep the underline when tab is active */
+.nav-links a.active::after {
+  width: 100%;
+}
 
 
 /* -------------------------- Home Hero section -------------------------- */
