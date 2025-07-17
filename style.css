@@ -260,6 +260,7 @@ body.menu-open .hamburger {
 .contact-section button {
   width: fit-content;       /* Makes the button as wide as its content */
   align-self: center;       /* Centers it in the flex column */
+  margin: 1em;
   padding: 0.7em 1.5em;      /* Adds horizontal padding */
   background-color: navy; /* Navy Blue */
   color: white;
