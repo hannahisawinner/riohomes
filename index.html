@@ -57,6 +57,15 @@
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="phone" name="phone" placeholder="Your Phone Number" required />
+
+      <!-- New Dropdown Selector -->
+      <select name="focus" required>
+        <option value="" disabled selected>Please Select Your Focus</option>
+        <option value="Buying">Selling a house</option>
+        <option value="Selling">Buying a house</option>
+        <option value="Not Sure">Other</option>
+      </select>
+      
       <textarea name="message" placeholder="Your Message"></textarea>
       <button type="submit">Send Message</button>
       <p id="form-response"></p>
