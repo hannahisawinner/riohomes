@@ -338,22 +338,17 @@ body.menu-open .hamburger {
 #form-response {
   text-align: center;
   font-size: 1em;
-  max-height: 100px;
-  opacity: 1;
-  margin: 0.5em 0;
-  transition: 
-    opacity 0.5s ease,
-    max-height 0.5s ease,
-    margin 0.5s ease;
-  overflow: hidden;
-}
-
-#form-response.hidden {
+  color: green;
   opacity: 0;
-  max-height: 0;
-  margin: 0;
+  transition: opacity 0.5s ease;
+  height: 1.2em;           /* Reserve consistent space */
+  margin-top: -0.5em;      /* Bring it closer to the button */
+  pointer-events: none;    /* Prevent layout interaction */
 }
 
+#form-response.show {
+  opacity: 1;
+}
 
 
 
