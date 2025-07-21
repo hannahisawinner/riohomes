@@ -234,8 +234,8 @@ body.menu-open .hamburger {
 /* -------------------------- About Us section -------------------------- */
 
 .about-section {
-  padding: 4em 1em;
-  max-width: 800px;
+  padding: 3em 4em;
+/*   max-width: 800px; */
   margin: 0 auto;
   background-color: #f9f9f9;
   text-align: left; /* or center if you prefer */
