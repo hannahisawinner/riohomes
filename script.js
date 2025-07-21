@@ -29,7 +29,7 @@ function showMessage(message, color = 'green') {
       responseEl.textContent = '';
       responseEl.classList.remove('hidden'); // Reset for future use
     }, 500); // allow fade-out transition
-  }, 3500);
+  }, 3000);
 }
 
 contactForm.addEventListener('submit', async function(e) {
