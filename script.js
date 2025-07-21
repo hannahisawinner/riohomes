@@ -22,14 +22,13 @@ function showMessage(message, color = 'green') {
   responseEl.style.color = color;
   responseEl.classList.remove('hidden');
 
-  // Hide after 5 seconds with fade out
+  // Hide after 3 seconds with fade out
   setTimeout(() => {
     responseEl.classList.add('hidden');
     setTimeout(() => {
       responseEl.textContent = '';
-      responseEl.classList.remove('hidden'); // Reset for future use
     }, 500); // allow fade-out transition
-  }, 3000);
+  }, 3000); // Hide after 3 seconds 
 }
 
 contactForm.addEventListener('submit', async function(e) {
