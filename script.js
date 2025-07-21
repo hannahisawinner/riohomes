@@ -26,7 +26,7 @@ contactForm.addEventListener('submit', async function(e) {
   data.append('name', contactForm.name.value);
   data.append('email', contactForm.email.value);
   data.append('phone', contactForm.phone.value);
-  data.append('interest', contactForm.focus.value); // <== "focus" is the select's name
+  data.append('interest', contactForm.interest.value); 
   data.append('message', contactForm.message.value);
 
   try {
