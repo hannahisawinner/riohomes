@@ -20,11 +20,11 @@ const responseEl = document.getElementById('form-response');
 function showMessage(message, color = 'green') {
   responseEl.textContent = message;
   responseEl.style.color = color;
-  responseEl.classList.remove('hidden');
+  responseEl.classList.add('show');
 
   // Hide after 3 seconds with fade out
   setTimeout(() => {
-    responseEl.classList.add('hidden');
+    responseEl.classList.remove('show');
     setTimeout(() => {
       responseEl.textContent = '';
     }, 500); // allow fade-out transition
