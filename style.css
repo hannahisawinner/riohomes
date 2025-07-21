@@ -338,7 +338,7 @@ body.menu-open .hamburger {
 #form-response {
   text-align: center;
   font-weight: 500;
-  margin-top: 1em;
+  margin-top: 0.5em;
   transition: opacity 0.5s ease;
   opacity: 1;
   color: green; /* default color; overridden in JS */
