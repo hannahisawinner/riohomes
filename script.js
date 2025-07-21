@@ -17,6 +17,21 @@ function closeMenu() {
 const contactForm = document.getElementById('contact-form');
 const responseEl = document.getElementById('form-response');
 
+function showMessage(message, color = 'green') {
+  responseEl.textContent = message;
+  responseEl.style.color = color;
+  responseEl.classList.remove('hidden');
+
+  // Hide after 5 seconds with fade out
+  setTimeout(() => {
+    responseEl.classList.add('hidden');
+    setTimeout(() => {
+      responseEl.textContent = '';
+      responseEl.classList.remove('hidden'); // Reset for future use
+    }, 500); // allow fade-out transition
+  }, 5000);
+}
+
 contactForm.addEventListener('submit', async function(e) {
   e.preventDefault();
 
@@ -40,14 +55,14 @@ contactForm.addEventListener('submit', async function(e) {
 
     const result = await res.json();
     if (result.result === 'success') {
-      responseEl.textContent = "✅ Message sent successfully!";
       contactForm.reset();
+      showMessage("✅ Message sent successfully!");
     } else {
-      responseEl.textContent = "❌ Something went wrong. Please try again.";
+      showMessage("❌ Something went wrong. Please try again.", 'darkred');
     }
   } catch (error) {
     console.error('Form submission failed:', error);
-    responseEl.textContent = "⚠️ Error submitting the form: " + error.message;
+    showMessage("⚠️ Error submitting the form: " + error.message, 'darkred');
   }
 });
 
