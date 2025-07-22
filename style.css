@@ -234,7 +234,7 @@ body.menu-open .hamburger {
 /* -------------------------- About Us section -------------------------- */
 
 .about-section {
-  padding: 3em 4em;
+  padding: 2em 1em;
 /*   max-width: 800px; */
   margin: 0 auto;
   background-color: #f9f9f9;
@@ -249,8 +249,12 @@ body.menu-open .hamburger {
   font-size: 2rem;
   margin-bottom: 1em;
 }
-
 .about-section p {
+  margin-bottom: 1.2em;
+}
+.about-section ul {
+  list-style-position: inside;
+  padding-left: 0;
   margin-bottom: 1.5em;
 }
 
