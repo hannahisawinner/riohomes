@@ -250,7 +250,9 @@ body.menu-open .hamburger {
   margin-bottom: 1em;
 }
 .about-section p {
-  margin-bottom: 1.2em;
+  max-width: 600px; /* or 500px, depending on your layout */
+  margin: 0 auto 1.2em auto; /* centers the paragraph */
+  text-align: left; /* keeps the text aligned to the left inside */
 }
 .about-section ul {
   max-width: 400px; /* or however wide you want */
