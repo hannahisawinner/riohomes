@@ -274,18 +274,21 @@ body.menu-open .hamburger {
   flex: 1 1 45%;
   min-width: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1em;
+  padding: 2em 1em;
   min-height: 250px; /* adjust as needed for vertical space */
+  background-color: #e6e6e6; /* Slightly darker background than the left */
+  border-left: 1px solid #ccc; /* Optional: visual separation */
 }
 
 .about-right p {
   font-size: 1.3rem;  /* slightly larger */
   font-weight: bold;
   max-width: 500px;
-  margin: 0;
+  margin: 0 0 1em 0;
 }
 
 
