@@ -251,6 +251,8 @@ body.menu-open .hamburger {
   align-items: stretch; /* let left and right grow to same height */
 }
 
+
+
 .about-left {
   flex: 1 1 45%; /* flex-grow, flex-shrink, min-width */
   min-width: 300px;
@@ -260,15 +262,20 @@ body.menu-open .hamburger {
   font-size: 2rem;
   margin-bottom: 1em;
 }
-.about-left p,
+.about-left p {
+  text-align: left;
+  margin-bottom: 1.2em;
+  max-width: 500px;
+}
 .about-left ul {
   text-align: left;
   margin-bottom: 1.2em;
-}
-.about-left ul {
   list-style-position: outside;
   padding-left: 1.2em;
+  max-width: 500px;
 }
+
+
 
 .about-right {
   flex: 1 1 45%;
@@ -282,7 +289,6 @@ body.menu-open .hamburger {
   min-height: 250px; /* adjust as needed for vertical space */
   background-color: #e6e6e6; /* Slightly darker background than the left */
 }
-
 .about-right p {
   font-size: 1.3rem;  /* slightly larger */
   font-weight: bold;
