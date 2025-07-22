@@ -262,7 +262,7 @@ body.menu-open .hamburger {
   box-sizing: border-box;
 }
 .about-left h2 {
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
   margin-bottom: 1em;
 }
