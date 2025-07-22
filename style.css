@@ -249,6 +249,7 @@ body.menu-open .hamburger {
   margin: 0 auto;
   justify-content: space-between; /* or center, depending on your layout */
   align-items: stretch; /* let left and right grow to same height */
+  padding: 0 1em;        /* Adds spacing on the outer sides */
 }
 
 
@@ -256,6 +257,9 @@ body.menu-open .hamburger {
 .about-left {
   flex: 1 1 45%; /* flex-grow, flex-shrink, min-width */
   min-width: 300px;
+  padding-left: 1em;     /* Pushes content away from the left edge */
+  padding-right: 1em;    /* (Optional) gives balance */
+  box-sizing: border-box;
 }
 .about-left h2 {
   text-align: center;
