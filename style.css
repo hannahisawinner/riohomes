@@ -281,7 +281,6 @@ body.menu-open .hamburger {
   padding: 2em 1em;
   min-height: 250px; /* adjust as needed for vertical space */
   background-color: #e6e6e6; /* Slightly darker background than the left */
-  border-left: 1px solid #ccc; /* Optional: visual separation */
 }
 
 .about-right p {
