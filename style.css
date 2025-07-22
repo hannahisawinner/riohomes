@@ -242,12 +242,6 @@ body.menu-open .hamburger {
   color: #333;
 }
 
-.about-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1em;
-}
-
 .about-container {
   display: flex;
   flex-wrap: wrap; /* ensures it stacks on small screens */
@@ -261,6 +255,11 @@ body.menu-open .hamburger {
 .about-left,
 .about-right {
   flex: 1 1 400px; /* flex-grow, flex-shrink, min-width */
+}
+.about-left h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1em;
 }
 
 .about-left p,
