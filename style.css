@@ -235,7 +235,6 @@ body.menu-open .hamburger {
 
 .about-section {
   padding: 2em 1em;
-  margin: 0 auto;
   background-color: #f9f9f9;
   font-size: 1.1rem;
   line-height: 1.7;
@@ -245,15 +244,16 @@ body.menu-open .hamburger {
 .about-container {
   display: flex;
   flex-wrap: wrap; /* ensures it stacks on small screens */
-  gap: 2em;
+/*   gap: 2em; */
   max-width: 1000px;
   margin: 0 auto;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between; /* or center, depending on your layout */
+  align-items: stretch; /* let left and right grow to same height */
 }
 
 .about-left {
-  flex: 1 1 400px; /* flex-grow, flex-shrink, min-width */
+  flex: 1 1 45%; /* flex-grow, flex-shrink, min-width */
+  min-width: 300px;
 }
 .about-left h2 {
   text-align: center;
@@ -271,7 +271,8 @@ body.menu-open .hamburger {
 }
 
 .about-right {
-  flex: 1 1 400px;
+  flex: 1 1 45%;
+  min-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,7 +282,7 @@ body.menu-open .hamburger {
 }
 
 .about-right p {
-  font-size: 1.25rem;  /* slightly larger */
+  font-size: 1.3rem;  /* slightly larger */
   font-weight: bold;
   max-width: 400px;
   margin: 0;
