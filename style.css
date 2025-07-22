@@ -253,10 +253,13 @@ body.menu-open .hamburger {
   margin-bottom: 1.2em;
 }
 .about-section ul {
-  list-style-position: inside;
-  padding-left: 0;
-  margin-bottom: 1.5em;
+  max-width: 400px; /* or however wide you want */
+  margin: 0 auto;
+  text-align: left;
+  list-style-position: outside;
+  padding-left: 1.2em; /* adds slight indent for bullets */
 }
+
 
 
 
