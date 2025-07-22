@@ -287,7 +287,7 @@ body.menu-open .hamburger {
   font-size: 1.3rem;  /* slightly larger */
   font-weight: bold;
   max-width: 500px;
-  margin: 0 0 1em 0;
+/*   margin: 0 0 1em 0; */
 }
 
 
