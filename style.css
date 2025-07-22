@@ -259,7 +259,6 @@ body.menu-open .hamburger {
   margin: 0 auto 1.5em;
   text-align: left;
   list-style-position: outside;
-  padding-left: 1.2em; /* adds slight indent for bullets */
 }
 
 
