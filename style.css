@@ -252,8 +252,7 @@ body.menu-open .hamburger {
   align-items: flex-start;
 }
 
-.about-left,
-.about-right {
+.about-left {
   flex: 1 1 400px; /* flex-grow, flex-shrink, min-width */
 }
 .about-left h2 {
@@ -261,25 +260,32 @@ body.menu-open .hamburger {
   font-size: 2rem;
   margin-bottom: 1em;
 }
-
 .about-left p,
-.about-left ul,
-.about-right p {
+.about-left ul {
   text-align: left;
   margin-bottom: 1.2em;
 }
-
-.about-right p {
-  text-align: center;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
 .about-left ul {
   list-style-position: outside;
   padding-left: 1.2em;
 }
 
+.about-right {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  min-height: 250px; /* adjust as needed for vertical space */
+}
+
+.about-right p {
+  font-size: 1.25rem;  /* slightly larger */
+  font-weight: bold;
+  max-width: 400px;
+  margin: 0;
+}
 
 
 
