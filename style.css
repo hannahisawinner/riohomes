@@ -245,7 +245,7 @@ body.menu-open .hamburger {
   display: flex;
   flex-wrap: wrap; /* ensures it stacks on small screens */
 /*   gap: 2em; */
-  max-width: 1000px;
+/*   max-width: 1000px; */
   margin: 0 auto;
   justify-content: space-between; /* or center, depending on your layout */
   align-items: stretch; /* let left and right grow to same height */
@@ -284,7 +284,7 @@ body.menu-open .hamburger {
 .about-right p {
   font-size: 1.3rem;  /* slightly larger */
   font-weight: bold;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0;
 }
 
